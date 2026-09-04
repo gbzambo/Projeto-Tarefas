@@ -26,7 +26,7 @@ const Tarefas = () => {
             text: campo,
         };
         setTarefas([...tarefas, novaTarefa]);
-        setCampo();
+        setCampo("");
     }
 
     const removerTarefa = (id) => {
@@ -35,7 +35,7 @@ const Tarefas = () => {
     };
     return (
         <>
-            <div className="todo-container">
+            <div className="max-w-md mx-auto p-6 bg-amber-300 rounded-2xl border border-blue-700">
                 <h2>Minha Lista de Tarefas</h2>
                 {/* chama afunção AdicionarTarefa */}
                 <form onSubmit={adicionarTarefa} className="todo-form">
